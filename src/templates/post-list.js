@@ -16,7 +16,7 @@ const PostList = (props) => {
     const isLast = currentPage === numPages
     const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
     const nextPage = (currentPage + 1).toString()
-
+    console.log(props.pageContext);
     const getTechTags = (tags) => {
         const techTags = []
         tags.forEach((tag, i) => {
@@ -69,7 +69,7 @@ const PostList = (props) => {
                                 <span className="text-dark">← Previous Page</span>
                             </Link>
                         )}
-                        {!isLast && (
+                        {!isLast &&  (
                             <Link to={nextPage} rel="next" style={{ textDecoration: `none` }}>
                                 <span className="text-dark ml-5">Next Page →</span>
                             </Link>

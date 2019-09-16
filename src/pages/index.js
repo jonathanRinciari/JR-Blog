@@ -8,12 +8,11 @@ import SEO from "../components/seo"
 import Sidebar from "../components/sidebar/Sidebar"
 import TechTag from "../components/tags/TechTag"
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data }, props) => {
   const posts = data.allMarkdownRemark.edges
   const labels = data.site.siteMetadata.labels
   const currentPage = 1
   const nextPage = (currentPage + 1).toString()
-
   const getTechTags = (tags) => {
     const techTags = []
     tags.forEach((tag, i) => {
@@ -60,11 +59,11 @@ const IndexPage = ({ data }) => {
               </div>
             )
           })}
-          <div className="mt-4 text-center">
+          {/* <div className="mt-4 text-center">
             <Link to={nextPage} rel="next" style={{ textDecoration: `none` }}>
               <span className="text-dark">Next Page →</span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </Layout>
