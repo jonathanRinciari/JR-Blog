@@ -15,49 +15,28 @@ const AboutPage = (props) => {
                 <div className="sidebar px-4 py-2">
                     <Sidebar />
                 </div>
-
                 <div className="post-main">
                     <SEO title="About" />
                     <div className="mt-3">
-                        <h2 className="heading">About</h2>
-                        <p><i>Developer Diary is a Gatsby Starter blog template created with web developers in mind, but really, anyone can use it. It's totally usable right out of the box, but minimalist enough to be easily modifiable to suit your needs.</i></p>
+                        <h2 className="heading">Hey!</h2>
+                        <p><i>I am Jon Rinciari, and I work as a Software Engineer at Amazon in Seattle, WA!</i></p>
+                        <p>
+                            I have been working professionally for the last 5 years. Working at a variety of different start ups. I have had 
+                            the oppurtunity to use the latest technologies and work with some of the best engineers!
+                        </p>
+                        <p>
+                            I love exploring new technolgies, but also sharing what I learn with others. I taught myself programming and now
+                            I want to share what I know with all of you!
+                        </p>
                         <br />
-                        <h4>Features</h4>
+                        <p className="d-inline-block ml-3 w-75 align-top">Some Technologies I Love!</p>
                         <div>
-                            <span className="text-success d-inline-block" title="blazing">
-                                <FaCheckCircle size={26} style={{ color: "success" }} />
-                            </span>
-                            <p className="d-inline-block ml-3 w-75 align-top">Blazing fast, as you'd expect from a Gatsby site</p>
-                        </div>
-                        <div>
-                            <span className="text-success d-inline-block" title="tags">
-                                <FaCheckCircle size={26} style={{ color: "success" }} />
-                            </span>
-                            <p className="d-inline-block ml-3 w-75 align-top">Tech tags designed for web developers</p>
                             <div className="ml-5">
                                 <TechTag tag="react" tech="React" name="DiReact" size={20} color="deepskyblue" />
                                 <TechTag tag="nodejs" tech="Node.js" name="DiNodejsSmall" size={20} color="lightgreen" />
                                 <TechTag tag="html" tech="HTML" name="FaHtml5" size={20} color="darkorange" />
                                 <TechTag tag="css" tech="CSS" name="DiCss3Full" size={20} color="teal" />
                             </div>  
-                        </div>
-                        <div className="mt-4">
-                            <span className="text-success d-inline-block" title="prism">
-                                <FaCheckCircle size={26} style={{ color: "success" }} />
-                            </span>
-                            <p className="d-inline-block ml-3 w-75 align-top">Includes Prism for code block styling in markdown files</p>
-                        </div>
-                        <div>
-                            <span className="text-success d-inline-block" title="icons">
-                                <FaCheckCircle size={26} style={{ color: "success" }} />
-                            </span>
-                            <p className="d-inline-block ml-3 w-75 align-top">Developer-relevant social-media icon links including GitHub, Stack Overflow and freeCodeCamp</p>
-                        </div>
-                        <div>
-                            <span className="text-success d-inline-block" title="mobile">
-                                <FaCheckCircle size={26} style={{ color: "success" }} />
-                            </span>
-                            <p className="d-inline-block ml-3 w-75 align-top">Mobile responsive, of course</p>
                         </div>
                     </div>
                 </div>

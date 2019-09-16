@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Sidebar from "../components/sidebar/Sidebar"
 import TechTag from "../components/tags/TechTag"
 
-const ArchivePage = ({ data }) => {
+const BlogPage = ({ data }) => {
     const posts = data.allMarkdownRemark.edges
     const labels = data.site.siteMetadata.labels
 
@@ -27,7 +27,7 @@ const ArchivePage = ({ data }) => {
 
     return (
         <Layout>
-            <SEO title="Archive" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} />
+            <SEO title="Blog" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} />
             <div className="index-main">
                 <div className="sidebar px-4 py-2">
                     <Sidebar />
@@ -105,5 +105,5 @@ export const pageQuery = graphql`
          }
        `
 
-export default ArchivePage
+export default BlogPage
 

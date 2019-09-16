@@ -2,8 +2,6 @@ import React from "react";
 import {
     FaLinkedin,
     FaGithubSquare,
-    FaStackOverflow,
-    FaFreeCodeCamp,
     FaTwitterSquare
 } from "react-icons/fa"
 
@@ -11,7 +9,7 @@ import "../layout.css"
 
 const MobileSocialLinks = ({ contacts }) => {
     return (
-        <div className="bottom-bar py-1">
+        <div className="bottom-bar py-1" style={{background: '#3e5fbc'}}>
             <a className=" text-primary"
                 href={contacts.linkedin}>
                 <span title="Linked In">
@@ -24,18 +22,18 @@ const MobileSocialLinks = ({ contacts }) => {
                     <FaGithubSquare size={26} style={{ color: "light" }} />
                 </span>
             </a>
-            <a className="text-warning"
+            {/* <a className="text-warning"
                 href={contacts.stackoverflow}>
                 <span title="Stack Overflow">
                     <FaStackOverflow size={26} style={{ color: "warning" }} />
                 </span>
-            </a>
-            <a className="text-success"
+            </a> */}
+            {/* <a className="text-success"
                 href={contacts.freecodecamp}>
                 <span title="freeCodeCamp">
                     <FaFreeCodeCamp size={26} style={{ color: "success" }} />
                 </span>
-            </a>
+            </a> */}
             <a className="text-info"
                 href={contacts.twitter}>
                 <span title="Twitter">

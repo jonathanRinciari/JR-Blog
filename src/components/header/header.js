@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-
+import Logo from '../../images/diamond.png';
 
 import MobileSocialLinks from "./MobileSocialLinks"
 import MobilePageLinks from "./MobilePageLinks"
@@ -15,7 +15,7 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
     <header
       className="head-main"
       style={{
-        background: `black`
+        background: 'linear-gradient(45deg,#3e5fbc 0%,#FE81DB 100%)'
       }}
     >
       <div className="head-elements"
@@ -32,7 +32,7 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
               textDecoration: `none`,
             }}
           >
-            {siteTitle}
+            <img style={{margin: 'unset'}} src={Logo} alt={'Logo'}></img>
           </Link>
         </h1>
         <SocialLinks contacts={contacts} />
